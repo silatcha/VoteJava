@@ -1,0 +1,34 @@
+.pro{
+	-fx-background-color: linear-gradient(to top,blue,red);
+}
+
+.lok{
+	-fx-text-fill: linear-gradient(to right,#ffb200, blue);
+}
+
+.label3{
+	-fx-background-color: linear-gradient(to right,blue,white,blue,white,blue);
+	}
+	
+.compte{
+	-fx-background-radius:20px;
+	
+}
+
+.compte1{
+	-fx-background-radius:100px;
+	
+}
+
+
+.button {
+	-fx-background-color: linear-gradient(to top,violet,blue);
+	}
+        
+ .pro4{
+	-fx-background-color: linear-gradient(to right,#ffb200,white);
+	}     
+        
+     .lom{
+    -fx-border-color:linear-gradient(to right,white, #ffb200);
+       }

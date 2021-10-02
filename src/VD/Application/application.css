@@ -1,0 +1,54 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.param{
+	-fx-border-color: transparent;
+	-fx-border-radius:430px;
+	-fx-background-radius:40px;
+
+	-fx-background-color:linear-gradient(to right,violet,pink);
+}
+
+.param1:hover{
+		-fx-border-color:linear-gradient(to right,green, red,yellow);
+		-fx-background-color:green;
+		
+}
+
+
+.trans-btn-white-border{
+	-fx-background-color: transparent;
+	-fx-background-radius:5px;
+	-fx-color:white;
+	-fx-border-radius:5px;
+	-fx-border-width:1px;
+	-fx-text-fill:whitesmoke ;
+}
+
+
+
+.labelc{
+	-fx-text-fill:blue;
+     
+}
+
+.pro{
+	-fx-background-color: linear-gradient(to right,green, red,yellow);
+}
+
+
+
+
+.button {
+	-fx-border-color: pink;
+	-fx-border-radius:20px;
+	-fx-background-radius:20px;
+	-fx-text-fill:#4b63ea;
+	-fx-background-color:transparent;
+}
+
+.label{
+	-fx-text-fill: linear-gradient(to right,green, red,yellow);
+	-fx-background-color:transparent;
+}
+
+

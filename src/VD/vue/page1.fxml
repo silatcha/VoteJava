@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VD.controller.page1Controller">
+   <children>
+      <AnchorPane fx:id="apane" layoutY="-3.0" prefHeight="677.0" prefWidth="967.0" styleClass="lom" stylesheets="@../Application/accueil.css">
+         <children>
+            <Label fx:id="vote" layoutX="607.0" layoutY="190.0" prefHeight="110.0" prefWidth="346.0" styleClass="lok" text="Voting Day" textFill="#1a5fa8">
+               <font>
+                  <Font name="Agency FB Bold" size="89.0" />
+               </font>
+            </Label>
+            <ProgressIndicator blendMode="COLOR_DODGE" layoutX="410.0" layoutY="489.0" prefHeight="92.0" prefWidth="148.0" stylesheets="@../application/application.css">
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect></ProgressIndicator>
+            <Circle fx:id="cercle" fill="#1a5fa8" layoutX="250.0" layoutY="245.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="label1" layoutX="192.0" layoutY="202.0" styleClass="lok" text="VD" textFill="#ffb200">
+               <font>
+                  <Font name="Broadway" size="75.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

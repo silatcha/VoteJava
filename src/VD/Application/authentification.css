@@ -1,0 +1,25 @@
+.double{
+	
+	-fx-background-color: linear-gradient(to right,violet,pink);
+	-fx-background-radius:120px;
+	}
+	
+	.double1 {
+	-fx-border-color: #fc4d25;
+	-fx-background-color: linear-gradient(to right,violet,pink);
+	-fx-background-radius:120px;
+	}
+        
+        .button{
+	-fx-border-color: #88258d;
+	-fx-border-radius:20px;
+	-fx-background-radius:20px;
+	-fx-text-fill:#88258d;
+	
+}
+
+.button:hover{
+		-fx-border-color:linear-gradient(to right,green, red,yellow);
+		-fx-background-color:#88258d;
+		-fx-text-fill: white;
+}

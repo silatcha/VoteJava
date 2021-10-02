@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VD.controller.AdminvoteController">
+   <children>
+      <AnchorPane fx:id="pnitems" prefHeight="670.0" prefWidth="1163.0" style="-fx-background-color: #fff;">
+         <children>
+            <AnchorPane layoutY="54.0" prefHeight="619.0" prefWidth="306.0" style="-fx-background-color: #393351;">
+               <children>
+                  <Button contentDisplay="CENTER" layoutX="-4.0" layoutY="69.0" mnemonicParsing="false" onAction="#passagepartis" prefHeight="70.0" prefWidth="306.0" stylesheets="@../Application/style.css" text="             Partis Politiques" textFill="#eee3e3">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="80.0" top="50.0" />
+                     </padding>
+                  </Button>
+                  <Button layoutY="174.0" mnemonicParsing="false" onAction="#passageelections" prefHeight="70.0" prefWidth="306.0" stylesheets="@../Application/style.css" text="                 elections en cours " textFill="#eee3e3">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="80.0" top="50.0" />
+                     </padding>
+                  </Button>
+                  <Button layoutX="1.0" layoutY="288.0" mnemonicParsing="false" onAction="#passagecandidats" prefHeight="70.0" prefWidth="306.0" stylesheets="@../Application/style.css" text="  candidats" textFill="#eee3e3">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="80.0" top="50.0" />
+                     </padding>
+                  </Button>
+                  <Button layoutX="-4.0" layoutY="393.0" mnemonicParsing="false" onAction="#passage" prefHeight="70.0" prefWidth="307.0" stylesheets="@../Application/style.css" text="retour" textFill="#eee3e3">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="80.0" top="50.0" />
+                     </padding>
+                  </Button>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LIST_UL" layoutX="23.0" layoutY="134.0" size="35" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="LIST_UL" layoutX="23.0" layoutY="239.0" size="35" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="LIST_UL" layoutX="23.0" layoutY="353.0" size="35" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="MAIL_REPLY" layoutX="23.0" layoutY="466.0" size="35" />
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="58.0" prefWidth="306.0" style="-fx-background-color: #FA2C52; -fx-border-radius: 5;">
+               <children>
+                  <Label layoutX="27.0" layoutY="11.0" prefHeight="33.0" prefWidth="161.0" text="Coin du vote" textFill="#f2e5f1">
+                     <font>
+                        <Font name="Calisto MT Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" prefHeight="673.0" prefWidth="866.0" style="-fx-background-color: gray;">
+               <children>
+                  <Pane layoutX="24.0" layoutY="-129.0" prefHeight="287.0" prefWidth="400.0" rotate="41.6" style="-fx-background-color: #FA2C52; -fx-background-radius: 70;" />
+                  <Button layoutX="75.0" layoutY="190.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="241.0" styleClass="button2" stylesheets="@../Application/style.css" textFill="#1cc636">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="540.0" layoutY="190.0" mnemonicParsing="false" onAction="#passagevote" prefHeight="179.0" prefWidth="241.0" styleClass="button2" stylesheets="@../Application/style.css" textFill="#1cc636">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="75.0" layoutY="462.0" mnemonicParsing="false" onAction="#passagestat" prefHeight="179.0" prefWidth="241.0" styleClass="button2" stylesheets="@../Application/style.css" textFill="#1cc636">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="542.0" layoutY="470.0" mnemonicParsing="false" onAction="#passagedetails" prefHeight="179.0" prefWidth="241.0" styleClass="button2" stylesheets="@../Application/style.css" textFill="#1cc636">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="130.0" layoutY="326.0" prefHeight="35.0" prefWidth="147.0" text="Rechercher" textFill="#ebecf5">
+                     <font>
+                        <Font name="Cambria" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="630.0" layoutY="326.0" prefHeight="35.0" prefWidth="147.0" text="Voter" textFill="#ebecf5">
+                     <font>
+                        <Font name="Cambria" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="579.0" prefHeight="35.0" prefWidth="147.0" text="Statitisque" textFill="#ebecf5">
+                     <font>
+                        <Font name="Cambria" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="578.0" layoutY="579.0" prefHeight="36.0" prefWidth="195.0" text="Details  candidats" textFill="#ebecf5">
+                     <font>
+                        <Font name="Cambria" size="23.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="163.0" layoutY="304.0" size="70" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="HAND_ALT_UP" layoutX="630.0" layoutY="315.0" size="70" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" layoutX="163.0" layoutY="567.0" size="70" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="NAVICON" layoutX="630.0" layoutY="560.0" size="70" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

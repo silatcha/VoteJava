@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="940.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="-2.0" prefHeight="574.0" prefWidth="954.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="386.0" layoutY="276.0" text="Voting Day " textFill="#2d509e">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <MaterialDesignIconView fill="#ffb200" glyphName="HELP_CIRCLE" layoutX="357.0" layoutY="225.0" size="250" />
+            <Label layoutX="117.0" layoutY="310.0" prefHeight="101.0" prefWidth="730.0" text="est une application de vote électronique vous permettant d’effectuer ">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="411.0" text="votre quel que soit l’endroit où vous êtes ">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="226.0" layoutY="476.0" text="Si vous avez plus de questions  " textFill="#ffb200">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="486.0" layoutY="475.0" text="veuillez nous contacter " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+.button{
+	-fx-border-color: blue;
+	-fx-border-radius:20px;
+	-fx-background-radius:20px;
+	-fx-text-fill:blue;
+	-fx-background-color:transparent;
+}
+
+.button:hover{
+		-fx-border-color:linear-gradient(to right,green, red,yellow);
+		-fx-background-color:blue;
+		-fx-text-fill: white;
+}
+

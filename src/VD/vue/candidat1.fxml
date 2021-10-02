@@ -1,0 +1,93 @@
+<<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pnitems" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VD.controller.Candidat1Controlller">
+   <children>
+      <ScrollPane prefHeight="453.0" prefViewportWidth="735.0" prefWidth="712.0" AnchorPane.topAnchor="200.0">
+         <content>
+            <AnchorPane prefHeight="904.0" prefWidth="735.0">
+               <children>
+                  <Pane layoutX="8.0" layoutY="25.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat1" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="8.0" layoutY="104.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat2" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="16.0" layoutY="179.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat3" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="16.0" layoutY="250.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat4" layoutX="87.0" layoutY="25.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="24.0" layoutY="321.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat5" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="24.0" layoutY="392.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat6" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="24.0" layoutY="463.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat7" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="24.0" layoutY="534.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat8" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="24.0" layoutY="605.0" prefHeight="63.0" prefWidth="650.0" style="-fx-background-color: #ee8f0b; -fx-background-radius: 50 50 50 50;" AnchorPane.leftAnchor="24.0">
+                     <children>
+                        <Label fx:id="candidat9" layoutX="87.0" layoutY="23.0" prefHeight="17.0" prefWidth="457.0" text="Label" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <BorderPane layoutX="58.0" layoutY="31.0" prefHeight="81.0" prefWidth="652.0" style="-fx-background-color: #1e90ff; -fx-background-radius: 50;">
+         <center>
+            <Label text="LISTE DES CANDIDATS" textFill="#a41313" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Button fx:id="retour" layoutX="652.0" mnemonicParsing="false" onAction="#vers_retour" style="-fx-background-color: #a41313; -fx-background-radius: 50 0 0 50;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Circle fx:id="cercle" fill="#1a5fa8" layoutX="58.0" layoutY="71.0" radius="58.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Circle>
+      <Label fx:id="label1" layoutX="6.0" layoutY="33.0" text="VD" textFill="#ffb200">
+         <font>
+            <Font name="Broadway" size="68.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

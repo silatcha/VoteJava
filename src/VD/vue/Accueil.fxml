@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccueilController">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="681.0" prefWidth="1292.0">
+         <children>
+            <Pane layoutX="660.0" prefHeight="681.0" prefWidth="634.0" style="-fx-background-color: #1c242d;" styleClass="label2">
+               <children>
+                  <Label layoutX="225.0" layoutY="87.0" styleClass="lok" stylesheets="@../application/bar.css" text="Connectez-Vous">
+                     <font>
+                        <Font name="Corbel" size="37.0" />
+                     </font>
+                  </Label>
+                  <MaterialDesignIconView fill="#fc4d25" glyphName="" layoutX="160.0" layoutY="124.0" size="50" styleClass="label1" text="" visible="false" wrappingWidth="55.0">
+                     
+                  </MaterialDesignIconView>
+                  <JFXTextField fx:id="utilisateur" focusColor="#fc4d25" focusTraversable="false" labelFloat="true" layoutX="119.0" layoutY="257.0" prefHeight="31.0" prefWidth="420.0" promptText="Nom d'utilisateur" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#575352">
+                     <font>
+                        <Font size="17.0" />
+                     </font></JFXTextField>
+                  <FontAwesomeIconView fill="#fc4d25" glyphName="USER" layoutX="95.0" layoutY="278.0" size="20" wrappingWidth="16.142857551574707" />
+                  <FontAwesomeIconView fill="#fc4d25" glyphName="KEY" layoutX="90.0" layoutY="394.0" size="20" />
+                  <JFXButton fx:id="connecter" layoutX="202.0" layoutY="547.0" onAction="#methode" prefHeight="33.0" prefWidth="273.0" stylesheets="@../application/connection.css" text="Valider" />
+                  <JFXPasswordField fx:id="password" focusColor="#fc4d25" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="361.0" prefHeight="31.0" prefWidth="420.0" promptText="Mot de passe" styleClass="labelc" stylesheets="@../application/application.css">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <FontAwesomeIconView fill="#fc4d25" glyphName="UNLOCK_ALT" layoutX="157.0" layoutY="123.0" size="50" wrappingWidth="5.911458805203438" />
+               </children>
+            </Pane>
+            <Pane prefHeight="681.0" prefWidth="662.0" style="-fx-background-color: #1c242d;">
+               <children>
+                  <JFXTextField fx:id="nom" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="22.0" layoutY="68.0" prefHeight="31.0" prefWidth="227.0" promptText="Nom" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="prenom" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="22.0" layoutY="160.0" prefHeight="31.0" prefWidth="227.0" promptText="Prenom" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="adresse" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="22.0" layoutY="250.0" prefHeight="31.0" prefWidth="227.0" promptText="Adresse" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="tel" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="22.0" layoutY="341.0" prefHeight="31.0" prefWidth="227.0" promptText="Telephone" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="nomuti" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="22.0" layoutY="431.0" prefHeight="31.0" prefWidth="227.0" promptText="Nom d'utilisateur" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="datenaiss" focusTraversable="false" layoutX="348.0" layoutY="68.0" prefHeight="31.0" prefWidth="227.0" promptText="Date de naissance" stylesheets="@../application/datepicker.css">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXDatePicker>
+                  <JFXTextField fx:id="cni" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="348.0" layoutY="160.0" prefHeight="31.0" prefWidth="227.0" promptText="Numero de CNI" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="cni1" focusColor="#3dcd63" focusTraversable="false" labelFloat="true" layoutX="348.0" layoutY="357.0" prefHeight="31.0" prefWidth="227.0" promptText="E-mail" styleClass="labelc" stylesheets="@../application/application.css" unFocusColor="#3e3f40">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="prof" focusColor="#3dcd63" layoutX="348.0" layoutY="266.0" prefHeight="31.0" prefWidth="227.0" promptText="Professions" styleClass="labelc" stylesheets="@../application/application.css">
+                     <effect>
+                        <ColorAdjust brightness="0.61" />
+                     </effect>
+                  </JFXComboBox>
+                  <JFXButton fx:id="inscrire" layoutX="165.0" layoutY="570.0" prefHeight="33.0" prefWidth="273.0" stylesheets="@../application/inscription.css" text="S'inscrire" />
+                  <Pane fx:id="pn" layoutY="4.0" prefHeight="674.0" prefWidth="662.0" styleClass="label3" stylesheets="@../application/bar1.css">
+                     <children>
+                        <Label fx:id="comptelabel" layoutX="182.0" layoutY="430.0" text="Si vous avez un compte">
+                           <font>
+                              <Font name="Corbel" size="31.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="inscrirelabel" layoutX="145.0" layoutY="449.0" text="Si vous n'avez pas de compte">
+                           <font>
+                              <Font name="Corbel" size="31.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="inscrire1" layoutX="175.0" layoutY="543.0" onAction="#inscriptionSH" prefHeight="33.0" prefWidth="273.0" stylesheets="@../application/connection.css" text="S'inscrire" />
+                        <JFXButton fx:id="connecter1" layoutX="195.0" layoutY="510.0" onAction="#connecterSH" prefHeight="33.0" prefWidth="273.0" stylesheets="@../application/connection.css" text="Connecter" />
+                        <Circle fx:id="cercle" fill="#36449a" layoutX="331.0" layoutY="232.0" radius="68.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label fx:id="label1" layoutX="273.0" layoutY="189.0" text="VD" textFill="RED">
+                           <font>
+                              <Font name="Broadway" size="75.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

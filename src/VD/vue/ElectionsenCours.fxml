@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pnitems" prefHeight="849.0" prefWidth="1340.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VD.controller.ElectionsenCoursController">
+   <children>
+      <Pane layoutX="31.0" layoutY="44.0" prefHeight="101.0" prefWidth="1301.0" style="-fx-background-color: #1e90ff; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="413.0" layoutY="35.0" text="   LISTE DES ELECTIONS EN COURS" textFill="#a41313">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <Circle fx:id="cercle" fill="#1a5fa8" layoutX="58.0" layoutY="51.0" radius="58.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <Label fx:id="label1" layoutX="6.0" layoutY="12.0" text="VD" textFill="#ffb200">
+               <font>
+                  <Font name="Broadway" size="68.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tablelec" layoutX="30.0" layoutY="230.0" prefHeight="472.0" prefWidth="1301.0" style="-fx-background-color: #ee8f0b;">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="212.0" text="Nom Du Scrutin" />
+          <TableColumn fx:id="type" prefWidth="181.0" text="Type" />
+            <TableColumn fx:id="nombre" prefWidth="299.0" text="Nombre de Candidats" />
+            <TableColumn fx:id="ddebut" prefWidth="283.0" text="Date de debut" />
+            <TableColumn fx:id="ddfin" prefWidth="325.0" text="Date de Fin" />
+        </columns>
+      </TableView>
+      <Button fx:id="retour" layoutX="1167.0" layoutY="770.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #a41313; -fx-background-radius: 50 0 0 50;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
